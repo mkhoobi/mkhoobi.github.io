@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahta Khoobi · Human–AI Interaction in Clinical AI</title>
+  <meta name="description" content="Mahta Khoobi is a doctoral researcher at RWTH Aachen University studying how AI assistance changes the way radiologists look, trust and decide.">
+  <meta property="og:title" content="Mahta Khoobi · Human–AI Interaction in Clinical AI">
+  <meta property="og:description" content="Doctoral researcher at RWTH Aachen University studying how AI assistance changes the way radiologists look, trust and decide.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/cover2.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply saved theme before paint to avoid a flash.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Home">Mahta Khoobi</a>
+      <nav class="nav" aria-label="Main">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ COVER ============ -->
+    <div class="cover">
+      <img src="assets/cover2.jpg" alt="Illustration: a user reads a chest X-ray with AI assistance while an eye-tracker records their gaze, turning it into insights on dwell time, cognitive load, trust and visual search" width="2400" height="600">
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section id="top" class="hero container">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Mahta Khoobi</h1>
+      <p class="hero-role">Researcher in Human–AI Interaction · AI in Medicine</p>
+      <p class="hero-pitch">I study how AI assistance changes the way physicians look, trust and decide during diagnosis, and I build the platforms and interfaces to measure it.</p>
+      <p class="hero-meta"><a href="https://truhn.ai/page_id_34" target="_blank" rel="noopener">Lab for AI in Medicine</a>, RWTH Aachen University Hospital · Aachen, Germany</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#research">See my research</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <img class="avatar" src="assets/mahta.jpeg" alt="Portrait of Mahta Khoobi" width="240" height="340">
+        <div class="about-text">
+          <p>I research human–AI interaction in clinical settings. In controlled studies with radiologists, I use eye-tracking and physiological measures to show how AI explainability and uncertainty, and clinical pressures such as stress and fatigue, shape visual attention, trust and decision-making.</p>
+          <p>With a background in computer science and software engineering, I work across the full stack: building multimodal data-acquisition platforms that integrate eye-tracking and wearable sensors, designing clinical AI interfaces, and running user studies end to end.</p>
+          <p>What drives me is the gap between how systems are built and how experts actually use them under real conditions. I treat that gap as both a research problem and a design problem.</p>
+          <ul class="tags" aria-label="Research interests">
+            <li>Human–AI interaction in Medicine</li>
+                    <li>AI-enabled Application Development</li>
+                     <li>UX research & Eye-tracking</li>
+          
+     
+      
+        
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEARCH ============ -->
+    <!-- EDIT: to add an image to a research card, put it in assets/research/ (e.g. assets/research/reader-study.jpg)
+         and change that card's src="assets/research/placeholder.svg" to point at it. -->
+    <section id="research" class="section container">
+      <h2 class="section-title">Research</h2>
+      <div class="project-grid">
+
+        <article class="card">
+          <img class="card-img" src="assets/research/breast-mri-viewer.jpg" alt="Image for AI-assisted breast cancer diagnosis" loading="lazy">
+          <div class="card-body">
+            <p class="card-kicker">Clinical AI platform</p>
+            <h3>AI-assisted breast cancer diagnosis</h3>
+            <p>Designed, built and maintain a web-based imaging platform with explainable classification models, within the pan-European swarm-learning project ODELIA and a DFG-funded multi-institutional study on breast MRI.</p>
+            <ul class="tags small"><li>ReactJS</li><li>Python</li><li>DICOM</li><li>Docker</li><li>ViT</li><li>LLM</li></ul>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-img" src="assets/research/reader-study-setup.jpg" alt="Image for How AI changes radiologists' reading" loading="lazy">
+          <div class="card-body">
+            <p class="card-kicker">Experimental studies</p>
+            <h3>How AI changes radiologists' reading</h3>
+            <p>Conducting controlled experiments with radiologists, on how AI assistance, explanation methods, reporting UI, decision-support format and fatigue affect diagnostic performance, gaze and reasoning in chest radiography and breast MRI.</p>
+            <ul class="tags small"><li>Experimental design</li><li>UX Research & Eye-tracking</li><li>Mixed-effects models</li></ul>
+          </div>
+        </article>
+
+
+        <article class="card">
+          <img class="card-img" src="assets/research/multimodal-sensing.jpg" alt="Image for Measuring fatigue, stress and cognitive load" loading="lazy">
+          <div class="card-body">
+            <p class="card-kicker">Multimodal sensing</p>
+            <h3>Measuring fatigue, stress and cognitive load</h3>
+            <p>Synchronized acquisition setups that combine medical reading interfaces with eye-tracking (Tobii, Pupil Labs) and wearable sensors (Empatica), plus the pipelines that turn them into digital biomarkers.</p>
+            <ul class="tags small"><li>Tobii</li><li>Pupil Labs</li><li>Empatica</li><li>Python</li></ul>
+          </div>
+        </article>
+<!-- 
+        <article class="card">
+          <img class="card-img" src="assets/research/placeholder.svg" alt="Image for Gaze-based coverage assistant" loading="lazy">
+          <div class="card-body">
+            <p class="card-kicker">Clinical Quality Assurance</p>
+            <h3>Gaze-based coverage assistant</h3>
+            <p>A real-time assistant in a customized OHIF DICOM viewer that flags under-inspected anatomic regions, evaluated in a prospective study comparing end-of-read and continuous feedback.</p>
+            <ul class="tags small"><li>ReactJS</li><li>Python</li><li>Tobii SDK</li><li>UI/UX</li></ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="card-img" src="assets/research/placeholder.svg" alt="Image for Human–AI interaction in the real world" loading="lazy">
+          <div class="card-body">
+            <p class="card-kicker">In progress</p>
+            <h3>Human–AI interaction in the real world</h3>
+            <p>A multi-trial program on AI interface factors (uncertainty cues, output timing, visual grammar, model framing), time pressure and shift fatigue, transferring findings from radiography to knee MRI.</p>
+            <ul class="tags small"><li>Factorial trials</li><li>Study design</li></ul>
+          </div>
+        </article> -->
+
+      </div>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="publications" class="section container">
+      <h2 class="section-title">Publications</h2>
+
+      <h3 class="pub-heading">Journal articles</h3>
+      <ol class="pubs">
+        <li>
+          <p class="pub-title">Effect of Reporting Mode and Clinical Experience on Radiologists' Gaze and Image Analysis Behavior in Chest Radiography</p>
+          <p class="pub-meta"><strong>M. Khoobi</strong>, D. Truhn, S. Nebelung, R. Siepmann, et al. · <em>Radiology</em>, 2026;318(2):e251348</p>
+          <a class="pub-link" href="https://doi.org/10.1148/radiol.251348" target="_blank" rel="noopener">doi:10.1148/radiol.251348</a>
+        </li>
+      </ol>
+
+      <h3 class="pub-heading">Conference presentations</h3>
+      <ol class="pubs">
+        <li>
+          <p class="pub-title">The Influence of Artificial Intelligence on Radiologists' Diagnostic Performance in Fatigue</p>
+          <p class="pub-meta"><strong>M. Khoobi</strong>, et al. · European Congress of Radiology (ECR) 2026 · <em>Insights into Imaging</em>, 2026;17(Suppl 1):175</p>
+          <a class="pub-link" href="https://doi.org/10.1186/s13244-026-02345-x" target="_blank" rel="noopener">doi:10.1186/s13244-026-02345-x</a>
+        </li>
+      </ol>
+
+      <h3 class="pub-heading">Under review</h3>
+      <ol class="pubs">
+        <li>
+          <p class="pub-title">Effect of Explanation Methods on Radiologist Performance and Image Analysis Behavior in Chest Radiography</p>
+          <p class="pub-meta"><strong>M. Khoobi</strong>, D. Truhn, S. Nebelung, R. Siepmann, et al. · <em>European Radiology</em>, submitted</p>
+        </li>
+        <li>
+          <p class="pub-title">From Dusk Till Dawn? Night Shift-Induced Fatigue, Diagnostic Performance, and AI Assistance in Chest Radiography</p>
+          <p class="pub-meta">R. Siepmann, <strong>M. Khoobi</strong>, D. Truhn, S. Nebelung, et al. · <em>European Radiology</em>, submitted</p>
+        </li>
+        <li>
+          <p class="pub-title">Effect of Decision-Support Format on Diagnostic Reasoning and Visual Interaction in Breast MRI Interpretation</p>
+          <p class="pub-meta"><strong>M. Khoobi</strong>, D. Truhn, S. Nebelung, M. Bode, et al. · Under review</p>
+        </li>
+        <li>
+          <p class="pub-title">Shaping the Gaze: Educational Intervention Changes Image Interaction Patterns in Chest Radiography</p>
+          <p class="pub-meta">O. Staege, <strong>M. Khoobi</strong>, et al. · Under review</p>
+        </li>
+      </ol>
+
+      <p class="pub-more">Full list on <a href="https://www.researchgate.net/profile/Mahta_Khoobi" target="_blank" rel="noopener">ResearchGate</a> and <a href="https://orcid.org/0009-0004-4038-6582" target="_blank" rel="noopener">ORCID</a>.</p>
+    </section>
+
+    <!-- ============ TALKS & EVENTS ============ -->
+    <!-- EDIT: one <li> per event, newest first.
+         Photos: put your image in assets/events/ (e.g. assets/events/ecr-2026.jpg) and change that event's
+         <img src="assets/events/placeholder.svg"> to point at it. Update the alt text too. Delete the <img> to show no photo. -->
+    <section id="events" class="section container">
+      <h2 class="section-title">Talks &amp; Events</h2>
+      <ol class="events">
+        <li class="event">
+          <img class="event-img" src="assets/events/zurich.jpeg" alt="Photo from the IDEA League Summer School at ETH Zurich" loading="lazy">
+          <div class="event-date">Jul 2026</div>
+          <div class="event-body">
+            <p class="event-type">Summer school</p>
+            <h3>IDEA League Summer School, ETH Zurich</h3>
+            <p>Selected PhD participant in “SustAIn: Ethics, Philosophy and Politics of AI for Sustainability”.</p>
+          </div>
+        </li>
+        <li class="event">
+          <img class="event-img" src="assets/events/ecr.jpeg" alt="Photo from the ECR 2026 talk" loading="lazy">
+          <div class="event-date">2026</div>
+          <div class="event-body">
+            <p class="event-type">Conference talk</p>
+            <h3>European Congress of Radiology (ECR) 2026</h3>
+            <p>I had the pleasure to present “The Influence of Artificial Intelligence on Radiologists' Diagnostic Performance in Fatigue” paper on behalf of my co-authors in Vienna.</p>
+            <a class="event-link" href="https://doi.org/10.1186/s13244-026-02345-x" target="_blank" rel="noopener">Abstract</a>
+          </div>
+        </li>
+        <li class="event">
+          <img class="event-img" src="assets/events/dokforum.jpeg" alt="Photo from the DokForum RWTH Aachen event" loading="lazy">
+          <div class="event-date">2025 – Today</div>
+          <div class="event-body">
+            <p class="event-type">Member & Organizer</p>
+            <h3>DokForum RWTH Aachen</h3>
+            <p>Member and organizer of events for the forum for female doctoral researchers at RWTH Aachen University. </p>
+          </div>
+        </li>
+                    <li class="event">
+          <img class="event-img" src="assets/events/uka.jpeg" alt="Photo from the Lab for AI in Medicine, RWTH Aachen University" loading="lazy">
+          <div class="event-date">2024 – Today</div>
+          <div class="event-body">
+            <p class="event-type">Research Assistant</p>
+            <h3><a href="https://truhn.ai/page_id_34" target="_blank" rel="noopener">Lab for AI in Medicine</a>, RWTH Aachen University Hospital</h3>
+            <p>I joined the Lab for AI in Medicine group in 2024 and started my PhD journey with Prof. Truhn and Prof. Nebelung!</p>
+          </div>
+        </li>
+        <li class="event">
+          <img class="event-img" src="assets/events/wai1.jpeg" alt="Photo from the Women in AI Aachen event" loading="lazy">
+          <div class="event-date">2023 – Today</div>
+          <div class="event-body">
+            <p class="event-type">Speaker &amp; organizer</p>
+            <h3>Women in AI, Aachen</h3>
+            <p>Speaker and event organizer for the Aachen chapter of Women in AI. </p>
+            <a class="event-link" href="https://www.ai.rwth-aachen.de/cms/ki/das-ki-center/aktuelle-meldungen/~bmcmhs/staerkung-von-frauen-in-der-ki-science/?lidx=1" target="_blank" rel="noopener">Read about the event</a>
+          </div>
+        </li>
+                    <li class="event">
+          <img class="event-img" src="assets/events/mastersgrad.jpeg" alt="Photo from the Graduation Ceremony of Masters Program, RWTH Aachen University" loading="lazy">
+          <div class="event-date">2023</div>
+          <div class="event-body">
+            <p class="event-type">Masters Graduate</p>
+            <h3>Computer Science Faculty, RWTH Aachen University</h3>
+            <p>I received my master's degree in Software Systems Engineering from RWTH Aachen University. Here my favourite professor (Prof. Borchers) handed it to me!</p>
+          </div>
+        </li>
+  
+      </ol>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section container">
+      <h2 class="section-title">Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="timeline-meta">2024 – Present</div>
+          <div>
+            <h3>Research Assistant / Doctoral Researcher · <a href="https://truhn.ai/page_id_34" target="_blank" rel="noopener">Lab for AI in Medicine</a>, RWTH Aachen University Hospital</h3>
+            <p>Designs and runs human–AI reader studies, builds clinical AI and multimodal sensing platforms, and manages the DFG breast MRI project and the lab's eye-tracking studies. Supervises student assistants and involves with teaching.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-meta">2021 – 2023</div>
+          <div>
+            <h3>Software Developer (Student Assistant) · adesso SE, Aachen, Germany</h3>
+            <p>Built data-streaming services and web applications for the adesso Financial Platform, a microservice-based banking platform, in agile cross-functional teams with CI/CD.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-meta">2019</div>
+          <div>
+            <h3>Software Developer (Student Assistant) · Entrepreneurship and Innovation Center, Alzahra University</h3>
+            <p>Developed CRUD web applications and their front ends with C#, ASP.NET MVC and JavaScript.</p>
+          </div>
+        </li>
+      </ol>
+
+      <h3 class="sub-title">Education</h3>
+      <ol class="timeline">
+        <li>
+          <div class="timeline-meta">2024 – 2027 (expected)</div>
+          <div>
+            <h3>Doctoral Candidate, AI in Medicine · RWTH Aachen University</h3>
+            <p>Human–AI interaction and clinical evaluation of AI in radiology. Supervised by PD Dr. med. Sven Nebelung and Prof. Dr. med. Daniel Truhn.</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-meta">2020 – 2023</div>
+          <div>
+            <h3>M.Sc. Software Systems Engineering · RWTH Aachen University</h3>
+            <p>Grade 1.5. Thesis: <em>Modeling Software Development Processes in Machine Learning Systems</em> (1.0).</p>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-meta">2015 – 2019</div>
+          <div>
+            <h3>B.Sc. Computer Engineering, Information Technology · Alzahra University, Tehran</h3>
+            <p>Grade 1.4, ranked 3rd of 25. Thesis: <em>Designing a Web of Things Platform for Smart Buildings</em> (1.0).</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section container">
+      <h2 class="section-title">Skills &amp; more</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Research methods</h3>
+          <p>Controlled reader and user studies, experimental design, usability testing, behavioral analysis, mixed-effects models, R, think-aloud, SUS, NASA-TLX</p>
+        </div>
+
+        <div>
+          <h3>Engineering</h3>
+          <p>Python, PyTorch, ReactJS, C#/.NET, Docker, Git, DICOM, LLM-based applications, Eye-tracking technologies</p>
+        </div>
+    
+        <div>
+          <h3>Languages</h3>
+          <p>English (C1) · German (C1)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section container contact">
+      <h2 class="section-title">Get in touch</h2>
+      <p>I'm always happy to talk about human–AI interaction, clinical AI evaluation, UX studies, and research collaborations.</p>
+      <a class="btn btn-primary" href="mailto:mahta.khoobi@rwth-aachen.de">mahta.khoobi@rwth-aachen.de</a>
+      <ul class="socials">
+        <li><a href="https://www.linkedin.com/in/mahta-khoobi" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://www.researchgate.net/profile/Mahta_Khoobi" target="_blank" rel="noopener">ResearchGate</a></li>
+        <li><a href="https://orcid.org/0009-0004-4038-6582" target="_blank" rel="noopener">ORCID</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mahta Khoobi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
