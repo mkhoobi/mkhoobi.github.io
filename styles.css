@@ -146,7 +146,7 @@ p { margin: 0 0 1em; }
 .avatar { width: 240px; height: 340px; object-fit: cover; object-position: top; border-radius: var(--radius); background: var(--surface); }
 @media (max-width: 720px) {
   .about-grid { grid-template-columns: 1fr; }
-    .avatar { width: 100%; max-width: 320px; height: auto; object-fit: contain; }
+      .avatar { width: 180px; height: auto; object-fit: contain; }
 }
 
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 16px 0 0; }
